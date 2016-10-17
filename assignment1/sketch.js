@@ -107,9 +107,11 @@ function minimum(x, y) {
     }
 }
 
-// this function take all the value in the array and flips them
-
-
+/**
+ * This function takes in an array and reverses it.
+ *
+ *
+ */
 function reverseArray(x) {
     newArray = [];
     for (var i = x.length - 1; i >= 0; i--) {
