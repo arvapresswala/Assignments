@@ -86,8 +86,8 @@ function divide(x, y) {
 }
 /** This function takes in two float values and returns the larger of those two values
  *
- *  @param {number} first   This is the first float of the sum
- *  @param {number} second  This is the second float of the sum
+ *  @param {number} x   This is the first float of the sum
+ *  @param {number} y  This is the second float of the sum
  *  @return {number}        The larger of first and second as a float value
  */
 function maximum(x, y) {
@@ -95,10 +95,10 @@ function maximum(x, y) {
         return x;
     }
 }
-/** This function takes in two float values and returns the smaller two values
+/** This function takes in two float values and returns the smaller of the two values
  *
- *  @param {number} first   This is the first float of the sum
- *  @param {number} second  This is the second float of the sum
+ *  @param {number} x   This is the first float of the sum
+ *  @param {number} y  This is the second float of the sum
  *  @return {number}        The smaller first and second as a float value
  */
 function minimum(x, y) {
@@ -109,8 +109,8 @@ function minimum(x, y) {
 
 /**
  * This function takes in an array and reverses it.
- *
- *
+ * @param {Array} x this is the values in the array
+ * @return {Array}  the reversed values of x
  */
 function reverseArray(x) {
     newArray = [];
