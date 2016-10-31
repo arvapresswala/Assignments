@@ -31,7 +31,6 @@ function draw() {
     boat.display();
 }
 // water constructor
-
 function Water() {
     this.x = random(width);
     this.y = random(height / 2 + 50, height);
@@ -52,7 +51,6 @@ function Water() {
 
 }
 //boat constructor
-
 function Boat() {
     this.z = 0;
     this.y = height / 2 - 20;
@@ -64,7 +62,6 @@ function Boat() {
         this.y += random(-1, 1);
         this.z = this.z + this.boatSpeed;
     }
-
     this.display = function() {
         fill(153, 102, 0);
         arc(this.z, this.y, 200, 150, radians(0), radians(180), CHORD);
