@@ -15,7 +15,7 @@ function draw() {
  */
 
 function fire(startx, endx, starty, endy) {
-    stroke(255, random(100, 153), 51)
+    stroke(255, random(50, 200), 51)
     line(startx, starty, endx, endy);
     if (startx < endx) {
         fire(startx + 50, endx - int(random(30, 90)), starty + int(random(30, 90)), endy - int(random(30, 90)));
