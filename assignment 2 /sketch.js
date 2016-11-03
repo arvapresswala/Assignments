@@ -23,6 +23,10 @@ function draw() {
             water[i].waves();
         }
     }
+    /**
+   * Checks to see if the boat gets to the edge of the sketch
+   * If it does, let is disappear and a new one appears from the start of the width
+   */
     if (boat.z > width) {
         boat.z = 0;
     }
@@ -30,12 +34,21 @@ function draw() {
     boat.move();
     boat.display();
 }
-// water constructor
+/**
+ * Represents water
+ * @class
+ * @constructor
+ */
 function Water() {
+    /** A variable to hold the location of the lines that act as the waves
+     */
     this.x = random(width);
     this.y = random(height / 2 + 50, height);
     console.log(this.x);
     this.speed = random(1, 2);
+
+  /** A variable to holds the speed of the waves
+   */
     this.waves = function() {
         if (this.x > width) {
             this.x = -100;
@@ -44,13 +57,20 @@ function Water() {
         this.y += random(-1.25, 1.25);
 
     }
+
     this.display = function() {
+        /** The lenght of the lines that make up the waves
+         */
         stroke(51, 153, 255);
         line(this.x, this.y, this.x + 50, this.y);
     }
 
 }
-//boat constructor
+/**
+ * Represents the boat
+ * @class
+ * @constructor
+ */
 function Boat() {
     this.z = 0;
     this.y = height / 2 - 20;
