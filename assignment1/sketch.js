@@ -59,8 +59,8 @@ function addition(x, y) {
 }
 /** This function takes in two float values and returns the difference of those two values
  *
- *  @param {number} x   This is the first float of the sum
- *  @param {number} y  This is the second float of the sum
+ *  @param {number} x   This is the first float of the difference
+ *  @param {number} y  This is the second float of the difference
  *  @return {number}        The difference of first and second as a float value
  */
 function subtraction(x, y) {
@@ -68,8 +68,8 @@ function subtraction(x, y) {
 }
 /** This function takes in two float values and multiplies the two values
  *
- *  @param {number} x   This is the first float of the sum
- *  @param {number} y  This is the second float of the sum
+ *  @param {number} x   This is the first float
+ *  @param {number} y  This is the second float
  *  @return {number}        The multiplies answer of first and second as a float value
  */
 function multiply(x, y) {
@@ -77,8 +77,8 @@ function multiply(x, y) {
 }
 /** This function takes in two float values and divides those two values
  *
- *  @param {number} x   This is the first float of the sum
- *  @param {number} y  This is the second float of the sum
+ *  @param {number} x   This is the dividend
+ *  @param {number} y  This is the divisor
  *  @return {number}        The divided answer of first and second as a float value
  */
 function divide(x, y) {
@@ -86,25 +86,27 @@ function divide(x, y) {
 }
 /** This function takes in two float values and returns the larger of those two values
  *
- *  @param {number} x   This is the first float of the sum
- *  @param {number} y  This is the second float of the sum
+ *  @param {number} x   This is the first float
+ *  @param {number} y  This is the second float
  *  @return {number}        The larger of first and second as a float value
  */
 function maximum(x, y) {
     if (x > y) {
         return x;
     }
+    else y:
 }
 /** This function takes in two float values and returns the smaller of the two values
  *
- *  @param {number} x   This is the first float of the sum
- *  @param {number} y  This is the second float of the sum
+ *  @param {number} x   This is the first float
+ *  @param {number} y  This is the second float
  *  @return {number}        The smaller first and second as a float value
  */
 function minimum(x, y) {
     if (x > y) {
         return y;
     }
+    else x;
 }
 
 /**
