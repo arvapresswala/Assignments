@@ -2,7 +2,6 @@ var water = [];
 var boat;
 
 function setup() {
-    //create water
     createCanvas(windowWidth, windowHeight);
     for (var i = 0; i < width; i = i + 30) {
         water[i] = new Water();
@@ -57,10 +56,10 @@ function Water() {
         this.y += random(-1.25, 1.25);
 
     }
-
+    /** The length of the lines that make up the waves
+     */
     this.display = function() {
-        /** The lenght of the lines that make up the waves
-         */
+
         stroke(51, 153, 255);
         line(this.x, this.y, this.x + 50, this.y);
     }
@@ -75,6 +74,8 @@ function Boat() {
     this.z = 0;
     this.y = height / 2 - 20;
     this.boatSpeed = 1;
+    /** A variable to holds the speed and movement of the boat
+     */
     this.move = function() {
         if (this.z > width) {
             this.z = width;
@@ -82,6 +83,8 @@ function Boat() {
         this.y += random(-1, 1);
         this.z = this.z + this.boatSpeed;
     }
+    /** The shapes that make up the boat
+    */
     this.display = function() {
         fill(153, 102, 0);
         arc(this.z, this.y, 200, 150, radians(0), radians(180), CHORD);
