@@ -94,7 +94,7 @@ function maximum(x, y) {
     if (x > y) {
         return x;
     }
-    else y:
+    else y;
 }
 /** This function takes in two float values and returns the smaller of the two values
  *
