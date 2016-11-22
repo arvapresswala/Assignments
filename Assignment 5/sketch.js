@@ -16,7 +16,7 @@ function draw() {
             words = txt[i].split(" ");
             for (j = 0; j < words.length; j++) {
                 if (words[j]) {
-                    word = createSpan(words[j]);
+                    word = createSpan(words[j] + " ");
                     if (words[j].charCodeAt(0) >= 65 && words[j].charCodeAt(0) <= 90) {
                         word.style("background-color: #FF99FF");
                         word.style("font-size: 20px");
