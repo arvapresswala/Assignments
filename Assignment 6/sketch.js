@@ -5,7 +5,8 @@ var ital;
 var stop, exc, quest;
 var results, output;
 var done;
-
+/* Loadinf rhesus file
+*/
 function preload() {
     done = false;
     fulltxt = loadStrings('rhesus.txt', doneLoading);
@@ -20,10 +21,11 @@ function doneLoading() {
 function setup() {
 
 }
-
+/* using regular expressions to find the number of
+2 digits, 3 digits, 4 digits, italica, periods, exclamation and question marks in the rhesus document
+*/
 function draw() {
     if (done) {
-        var par = createP('');
         double = /\b\d\d\b/g;
         triple = /\b\d\d\d\b/g;
         four = /\b\d\d\d\d\b/g;
@@ -45,7 +47,6 @@ function draw() {
         createP("exclamation" + "  " + resultse.length + '<br/>');
         createP("question" + "  " + resultsq.length + '<br/>');
         createP("italics" + "  " + resultsi.length + '<br/>');
-
         noLoop();
     }
 }
