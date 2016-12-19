@@ -7,3 +7,10 @@ The restart button reloads the page.
 The instruction button makes the music stop and the instructions appear on the page. When the instruction button is clicked again the page reloads.
 I have moving clouds in the background for design.
 The birds in the game move in sync with the amplitude and slider value.
+
+
+Ava -purple
+Shaiza - yellow
+Heather - orange and pink
+Drake- green
+Shahd - blue
