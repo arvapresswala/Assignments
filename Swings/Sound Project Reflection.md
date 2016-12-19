@@ -1,0 +1,5 @@
+# Sound Project Reflection
+
+#### Arva Presswala
+
+The poem I chose to work with was 'Swings'. When I talked to the children at Castlebridge, they all told me how much they liked the drawing of the birds on the sheet and it felt like they were flying when they would play on the swings. Therefore, I decided that the main theme of the visualization of the poem would be birds. At first I was planning to do a visualization of the poem, but later on I learnt that the project had to be interactive. Thus, I decided to change the my project to something in between a visualization and a game. I added sliders so that each bird could move slightly higher or lower depending on the value of the slider. I have named each bird after the children and they have to find out which colour bird they are. This project was really fun to do. I loved working with the children at Castlebridge as well as learning how to use the sound in programming. 

@@ -26,6 +26,7 @@ function setup() {
 */
 function draw() {
     if (done) {
+        var par = createP('');
         double = /\b\d\d\b/g;
         triple = /\b\d\d\d\b/g;
         four = /\b\d\d\d\d\b/g;
@@ -47,6 +48,7 @@ function draw() {
         createP("exclamation" + "  " + resultse.length + '<br/>');
         createP("question" + "  " + resultsq.length + '<br/>');
         createP("italics" + "  " + resultsi.length + '<br/>');
+
         noLoop();
     }
 }
