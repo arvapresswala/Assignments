@@ -1,4 +1,5 @@
 var sound;
+var button4;
 var img1, img2, img3, img4, img5, star;
 var amp;
 var amphistory = [];
@@ -79,7 +80,7 @@ function setup() {
     input5.position(220, 170);
     /** Button created to submit the answers
      */
-    button2 = createButton('submit');
+    button2 = createButton('SUBMIT');
     button2.style("font-size", "18px");
     button2.position(360, 75);
     button2.mousePressed(submit);
@@ -90,12 +91,18 @@ function setup() {
     for (var i = 0; i < 8; i++) {
         cloud.push(new Cloud());
     }
-
+    /** A button that will make the instructions appear on the screen
+     */
+    button4 = createButton('INSTRUCTIONS');
+    button4.style("font-size", "20px");
+    button4.position(width - 300, 75);
+    button4.mousePressed(written);
+    button4.style("background-color", "#E846A7");
 }
 
 function draw() {
     background("#62CBFA");
-    /** A button that only appears when restart is true
+    /** A button that only appears when an answer has been submitted
      */
     if (restart == true) {
         button3 = createButton('Restart');
@@ -104,6 +111,8 @@ function draw() {
         button3.mousePressed(mouse);
         button3.style("background-color", "#660099");
     }
+
+
     /** Display and moves clouds on screen
      */
     for (var i = 0; i < cloud.length; i++) {
@@ -198,6 +207,22 @@ function Cloud() {
  */
 function mouse() {
     if (restart == true) {
+        window.location.reload();
+    }
+}
+
+/** The instruction appear on the screen when button is pressed and
+the page reloads when the button is clicked again
+ */
+function written() {
+    if (sound.isPlaying()) {
+        sound.stop();
+        myP = createP("INSTRUCTIONS" + '<br/>' + "Each bird has been assigned to each of you. Next to your name , you will see a slider." + '<br/>' + " Move the slider left or right and look for a change in your bird (It will move up or down)." + '<br/>' + " Type the colour of your bird in the white box, and click on the SUBMIT button." + '<br/>' + "If you are wrong, it's ok, you can try again by clicking the RESTART button." + '<br/>' + "If the birds are moving to fast and you want to stop them, click on the PAUSE button."+ '<br/>' + "CLICK ON INSTRUCTIONS AGAIN TO START THE GAME");
+        myP.position(width / 5, height / 2);
+        myP.style("font-size", "25px");
+        myP.style("color", "#660066");
+        x = 0;
+    } else {
         window.location.reload();
     }
 }
