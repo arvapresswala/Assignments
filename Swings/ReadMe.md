@@ -9,8 +9,8 @@ I have moving clouds in the background for design.
 The birds in the game move in sync with the amplitude and slider value.
 
 
-Ava -purple
-Shaiza - yellow
-Heather - orange and pink
-Drake- green
-Shahd - blue
+*Ava -purple
+*Shaiza - yellow
+*Heather - orange and pink
+*Drake- green
+*Shahd - blue
