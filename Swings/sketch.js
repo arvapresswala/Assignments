@@ -38,29 +38,29 @@ function setup() {
      */
     slider1 = createSlider(0.1, 0.5, 0.3, 0.01);
     ava = createP("Ava");
-    ava.position(20, 30);
+    ava.position(20, 45);
     ava.style("font-size", "20px");
-    slider1.position(80, 45);
+    slider1.position(85, 70);
     shaiza = createP("Shaiza");
     shaiza.style("font-size", "20px");
     slider2 = createSlider(0.1, 0.5, 0.3, 0.01);
-    shaiza.position(20, 50);
-    slider2.position(80, 65);
+    shaiza.position(20, 70);
+    slider2.position(85, 95);
     heather = createP("Heather");
     heather.style("font-size", "20px");
     slider3 = createSlider(0.1, 0.5, 0.3, 0.01);
-    heather.position(20, 70);
-    slider3.position(80, 85);
+    heather.position(20, 95);
+    slider3.position(85, 120);
     drake = createP("Drake");
     drake.style("font-size", "20px");
     slider4 = createSlider(0.1, 0.5, 0.3, 0.01);
-    drake.position(20, 90);
-    slider4.position(80, 105);
+    drake.position(20, 120);
+    slider4.position(85, 145);
     shahd = createP("Shahd");
     shahd.style("font-size", "20px");
     slider5 = createSlider(0.1, 0.5, 0.3, 0.01);
-    shahd.position(20, 110);
-    slider5.position(80, 130);
+    shahd.position(20, 145);
+    slider5.position(85, 170);
     shahd.style("font-size", "20px");
     /** Created the textboxes where the answers will be typed
      */
@@ -68,16 +68,15 @@ function setup() {
     myP.position(100, -6);
     myP.style("font-size", "25px");
     input1 = createInput('');
-    input1.position(220, 45);
-    input1.size("font-size", "15px");
+    input1.position(220, 70);
     input2 = createInput();
-    input2.position(220, 65);
+    input2.position(220, 95);
     input3 = createInput();
-    input3.position(220, 85);
+    input3.position(220, 120);
     input4 = createInput();
-    input4.position(220, 105);
+    input4.position(220, 145);
     input5 = createInput();
-    input5.position(220, 130);
+    input5.position(220, 170);
     /** Button created to submit the answers
      */
     button2 = createButton('submit');
