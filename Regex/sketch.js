@@ -5,7 +5,7 @@ var ital;
 var stop, exc, quest;
 var results, output;
 var done;
-/* Loadinf rhesus file
+/* Loading rhesus file
 */
 function preload() {
     done = false;
@@ -16,6 +16,7 @@ function preload() {
 function doneLoading() {
     txt = fulltxt.join("\n");
     done = true;
+    
 }
 
 function setup() {
@@ -27,10 +28,10 @@ function setup() {
 function draw() {
     if (done) {
         var par = createP('');
-        double = /\b\d\d\b/g;
-        triple = /\b\d\d\d\b/g;
-        four = /\b\d\d\d\d\b/g;
-        ital = /\b_/g;
+        double = /\b\d{2}\b/g;
+        triple = /\b\d{3}\b/g;
+        four = /\b\d{4}\b/g;
+        ital = /^*\ab$*/g;
         stop = /[.]/g;
         exc = /[!]/g;
         quest = /[?]/g;

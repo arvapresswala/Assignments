@@ -217,7 +217,7 @@ the page reloads when the button is clicked again
 function written() {
     if (sound.isPlaying()) {
         sound.stop();
-        myP = createP("INSTRUCTIONS" + '<br/>' + "Each bird has been assigned to each of you. Next to your name , you will see a slider." + '<br/>' + " Move the slider left or right and look for a change in your bird (It will move up or down)." + '<br/>' + " Type the colour of your bird in the white box, and click on the SUBMIT button." + '<br/>' + "If you are wrong, it's ok, you can try again by clicking the RESTART button." + '<br/>' + "If the birds are moving to fast and you want to stop them, click on the PAUSE button."+ '<br/>' + "CLICK ON INSTRUCTIONS AGAIN TO START THE GAME");
+        myP = createP("INSTRUCTIONS" + '<br/>' + "Each bird has been assigned to each of you. Next to your name , you will see a slider." + '<br/>' + " Move the slider left or right and look for a change in your bird (It will move up or down)." + '<br/>' + " Type the colour of your bird in the white box, and click on the SUBMIT button." + '<br/>' + "If you are wrong, it's ok, you can try again by clicking the RESTART button." + '<br/>' + "If the birds are moving too fast and you want to stop them, click on the PAUSE button."+ '<br/>' + "CLICK ON INSTRUCTIONS AGAIN TO START THE GAME");
         myP.position(width / 5, height / 2);
         myP.style("font-size", "25px");
         myP.style("color", "#660066");
