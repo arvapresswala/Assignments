@@ -1,1 +1,2 @@
-The Rita part of the programs findsthe pronouns, nouns and verbs in the document.
+The Rita part of the programs finds the pronouns, nouns and verbs in the document.
+The Regex part of the program finds 2,3,4 digit numbers in the document as well as italicized words and .,!,? characters.
