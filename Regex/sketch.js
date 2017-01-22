@@ -6,7 +6,7 @@ var stop, exc, quest;
 var results, output;
 var done;
 /* Loading rhesus file
-*/
+ */
 function preload() {
     done = false;
     fulltxt = loadStrings('rhesus.txt', doneLoading);
@@ -16,7 +16,9 @@ function preload() {
 function doneLoading() {
     txt = fulltxt.join("\n");
     done = true;
-    
+    rita_txt = RiString(txt);
+    rita_pos = rita_txt.pos();
+
 }
 
 function setup() {
@@ -31,7 +33,7 @@ function draw() {
         double = /\b\d{2}\b/g;
         triple = /\b\d{3}\b/g;
         four = /\b\d{4}\b/g;
-        ital = /^*\ab$*/g;
+        ital = /\b_\b/g;
         stop = /[.]/g;
         exc = /[!]/g;
         quest = /[?]/g;
@@ -49,6 +51,23 @@ function draw() {
         createP("exclamation" + "  " + resultse.length + '<br/>');
         createP("question" + "  " + resultsq.length + '<br/>');
         createP("italics" + "  " + resultsi.length + '<br/>');
+        /*  Finding nouns
+         */
+        var nouns = /\bnn\b/g;
+        var properNouns = /\bnnp\b/g;
+        resultsn = rita_pos.match(nouns + properNouns);
+        createP("Nouns:" + "  " + resultsn.length + '<br/>');
+        /*  Finding pronouns
+         */
+        var pronouns = /\bprp\b/g;
+        var whPronouns = /bwp\b/g;
+        resultsp = rita_pos.match(pronouns + whPronouns);
+        createP("Pronouns:" + "  " + resultsp.length + '<br/>');
+        /*  Finding verba
+         */
+        var verbs = /\bvb\b/g;
+        resultsv = rita_pos.match(verbs);
+        createP("Verbs:" + "  " + resultsv.length + '<br/>');
 
         noLoop();
     }
